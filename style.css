@@ -3,7 +3,7 @@ body {
   font-weight: 500;
 }
 
-#bluebox .box {
+#bluebox {
   padding: 50px 0;
 }
 #bluebox .box .minibox {
@@ -29,7 +29,7 @@ body {
   font-size: 20px;
 }
 
-#purplebtn .box {
+#purplebtn {
   padding: 50px 0;
 }
 #purplebtn .box .btn {
@@ -47,7 +47,7 @@ body {
   background-color: #55374e;
 }
 
-#brownbox .box {
+#brownbox {
   padding: 50px 0;
 }
 #brownbox .box .minibox {
@@ -62,4 +62,50 @@ body {
 }
 #brownbox .box .minibox:hover {
   border-radius: 50px;
+}
+
+#bigblue {
+  padding: 50px 0;
+}
+#bigblue .box {
+  position: relative;
+}
+#bigblue .box .minibox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 200px;
+  background-color: #536ba3;
+  color: white;
+  font-size: 28px;
+  margin: 20px 0;
+}
+#bigblue .box .m5 {
+  position: absolute;
+  left: 300px;
+  top: 860px;
+}
+
+#biggreen {
+  padding: 50px 0;
+}
+#biggreen .box {
+  position: relative;
+}
+#biggreen .box .minibox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 200px;
+  color: white;
+  font-size: 28px;
+  background-color: #529662;
+  margin: 20px 0;
+}
+#biggreen .box .m2 {
+  position: absolute;
+  top: 200px;
+  left: 300px;
 }/*# sourceMappingURL=style.css.map */
