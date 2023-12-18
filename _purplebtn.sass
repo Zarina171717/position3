@@ -1,15 +1,41 @@
 #purplebtn
     padding: 50px 0
     .box
+        display: flex
+        justify-content: space-around
         .btn
             border: 5px solid #965a88
             background-color: #965a88
-            font-size: 20px
+            font-size: 18px
             color: #ffff
             width: 200px
             height: 100px
-            padding: 10px
             transition: 1s
             &:hover
                 border: 5px solid #965a88
                 background-color: #55374e
+        @media screen and ( max-width: 800px )
+            .box
+                display: flex
+                justify-content: space-around
+            .btn
+                border: 5px solid #7772db
+                background-color: #7772db
+                font-size: 18px
+                color: #ffff
+                width: 100px
+                height: 50px
+                transition: 1s
+        @media screen and ( max-width: 500px )
+            .box
+                display: flex
+                flex-direction: column
+                align-items: center
+            .btn
+                border: 5px solid #4a3450
+                background-color: #4a3450
+                font-size: 12px
+                color: #ffff
+                width: 60px
+                height: 50px
+                transition: 1s

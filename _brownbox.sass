@@ -1,7 +1,12 @@
 #brownbox
     padding: 50px 0
     .box
+        display: flex
+        justify-content: space-around
         .minibox
+            display: flex
+            justify-content: center
+            align-items: center
             font-size: 22px
             color: #ffff
             background-color: #895c3d
@@ -12,3 +17,14 @@
             transition: 1s
             &:hover
                 border-radius: 50px
+    @media screen and ( max-width: 800px )
+        .box
+            .minibox
+                font-size: 22px
+                color: #ffff
+                background-color: #ccc690
+                width: 50px
+                height: 50px
+                font-weight: 700
+                border-radius: 100px
+                transition: 1s

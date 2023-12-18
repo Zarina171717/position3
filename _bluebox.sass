@@ -1,13 +1,52 @@
 #bluebox
     padding: 50px 0
     .box
+        display: flex
+        justify-content: center
+        justify-content: space-around
         .minibox
+            display: flex
+            justify-content: center
+            align-items: center
             border: 3px solid #3f59a2
             width: 200px
             height: 200px
             background-color: #5989ad
             font-weight: 600
             .miniminibox
+                display: flex
+                justify-content: center
+                align-items: center
+                background-color: #3a5d92
+                width: 100px
+                height: 100px
+                color: #ffff
+                font-size: 20px
+                transition: 1s
+                &:hover
+                    background-color: #3a5d92
+                    width: 150px
+                    height: 150px
+                    color: #ffff
+                    font-size: 20px
+    @media screen and ( max-width: 800px )
+        .box
+            display: flex
+            flex-direction: column
+            align-items: center
+        .minibox
+            display: flex
+            justify-content: center
+            align-items: center
+            border: 3px solid #3f59a2
+            width: 200px
+            height: 200px
+            background-color: #5989ad
+            font-weight: 600
+            .miniminibox
+                display: flex
+                justify-content: center
+                align-items: center
                 background-color: #3a5d92
                 width: 100px
                 height: 100px

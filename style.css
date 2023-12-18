@@ -6,7 +6,15 @@ body {
 #bluebox {
   padding: 50px 0;
 }
+#bluebox .box {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
 #bluebox .box .minibox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 3px solid #3f59a2;
   width: 200px;
   height: 200px;
@@ -14,6 +22,9 @@ body {
   font-weight: 600;
 }
 #bluebox .box .minibox .miniminibox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #3a5d92;
   width: 100px;
   height: 100px;
@@ -28,29 +39,105 @@ body {
   color: white;
   font-size: 20px;
 }
+@media screen and (max-width: 800px) {
+  #bluebox .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #bluebox .minibox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #3f59a2;
+    width: 200px;
+    height: 200px;
+    background-color: #5989ad;
+    font-weight: 600;
+  }
+  #bluebox .minibox .miniminibox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3a5d92;
+    width: 100px;
+    height: 100px;
+    color: white;
+    font-size: 20px;
+    transition: 1s;
+  }
+  #bluebox .minibox .miniminibox:hover {
+    background-color: #3a5d92;
+    width: 150px;
+    height: 150px;
+    color: white;
+    font-size: 20px;
+  }
+}
 
 #purplebtn {
   padding: 50px 0;
 }
+#purplebtn .box {
+  display: flex;
+  justify-content: space-around;
+}
 #purplebtn .box .btn {
   border: 5px solid #965a88;
   background-color: #965a88;
-  font-size: 20px;
+  font-size: 18px;
   color: white;
   width: 200px;
   height: 100px;
-  padding: 10px;
   transition: 1s;
 }
 #purplebtn .box .btn:hover {
   border: 5px solid #965a88;
   background-color: #55374e;
 }
+@media screen and (max-width: 800px) {
+  #purplebtn .box .box {
+    display: flex;
+    justify-content: space-around;
+  }
+  #purplebtn .box .btn {
+    border: 5px solid #7772db;
+    background-color: #7772db;
+    font-size: 18px;
+    color: white;
+    width: 100px;
+    height: 50px;
+    transition: 1s;
+  }
+}
+@media screen and (max-width: 500px) {
+  #purplebtn .box .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #purplebtn .box .btn {
+    border: 5px solid #4a3450;
+    background-color: #4a3450;
+    font-size: 12px;
+    color: white;
+    width: 60px;
+    height: 50px;
+    transition: 1s;
+  }
+}
 
 #brownbox {
   padding: 50px 0;
 }
+#brownbox .box {
+  display: flex;
+  justify-content: space-around;
+}
 #brownbox .box .minibox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 22px;
   color: white;
   background-color: #895c3d;
@@ -62,6 +149,18 @@ body {
 }
 #brownbox .box .minibox:hover {
   border-radius: 50px;
+}
+@media screen and (max-width: 800px) {
+  #brownbox .box .minibox {
+    font-size: 22px;
+    color: white;
+    background-color: #ccc690;
+    width: 50px;
+    height: 50px;
+    font-weight: 700;
+    border-radius: 100px;
+    transition: 1s;
+  }
 }
 
 #bigblue {
